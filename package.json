@@ -1,0 +1,23 @@
+{
+  "name": "payment-gateway",
+  "version": "1.0.0",
+  "description": "Extandable payment gate way implementation",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "mocha 'src/test/controller/payment.test.js'"
+  },
+  "author": "Muhammad Afzaal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "braintree": "^3.17.0",
+    "chai": "^4.3.8",
+    "chai-http": "^4.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "mysql2": "^3.6.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "supertest": "^6.3.3"
+  }
+}

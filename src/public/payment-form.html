@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <form action="/process-payment" method="POST">
+        <!-- In order section -->
+        <label for="amount">Price (amount):</label>
+        <input type="text" id="amount" name="amount" required><br>
+
+        <label for="currency">Currency:</label>
+        <select id="currency" name="currency" required>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="THB">THB</option>
+            <option value="HKD">HKD</option>
+            <option value="SGD">SGD</option>
+            <option value="AUD">AUD</option>
+        </select><br>
+
+        <label for="fullName">Customer Full name:</label>
+        <input type="text" id="fullName" name="fullName" required><br>
+
+        <!-- In payment section -->
+        <label for="cardholderName">Credit card holder name:</label>
+        <input type="text" id="cardholderName" name="cardholderName" required><br>
+
+        <label for="cardNumber">Credit card number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required><br>
+
+        <label for="expirationMonth">Credit card expiration (MM/YYYY):</label>
+        <input type="text" id="expirationMonth" name="expirationMonth" placeholder="MM" required>
+        <input type="text" id="expirationYear" name="expirationYear" placeholder="YYYY" required><br>
+
+        <label for="cvv">Credit card CCV:</label>
+        <input type="text" id="cvv" name="cvv" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
